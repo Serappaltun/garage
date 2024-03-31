@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "bd5fc75b-2f53-4284-af34-10f75952f0d7",
+		"name": "GarageApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25806447"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/garage/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Park Jeep",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "plate",
+							"value": "34-SO-1222",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "BLUE",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "JEEP",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/garage/park"
+			},
+			"response": []
+		},
+		{
+			"name": "Park Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "plate",
+							"value": "34-SO-1222",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "BLUE",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "CAR",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/garage/park"
+			},
+			"response": []
+		},
+		{
+			"name": "Park Truck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "plate",
+							"value": "34-SO-1222",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "BLUE",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "TRUCK",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/garage/park"
+			},
+			"response": []
+		},
+		{
+			"name": "Park Leave",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/garage/leave/2"
+			},
+			"response": []
+		}
+	]
+}
